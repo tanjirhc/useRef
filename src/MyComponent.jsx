@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 
 function MyComponent(){
 
-  const ref = useRef(0);
+  const ref = useRef("pizza");
+  console.log(ref);
 
   useEffect(() => {
     console.log("Component Rendered");
