@@ -2,8 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 function MyComponent(){
 
-  const ref = useRef("pizza");
-  console.log(ref);
+  const inputRef = useRef(null);
 
   useEffect(() => {
     console.log("Component Rendered");
@@ -15,8 +14,11 @@ function MyComponent(){
   }
 
   return(
-  <button onClick={handleClick}>
-    Click Me
-  </button>)
+  <div>
+    <button onClick={handleClick}>
+      Click Me
+    </button>
+    <input ref={inputRef} />
+  </div>);
 }
 export default MyComponent;
