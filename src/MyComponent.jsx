@@ -13,16 +13,22 @@ function MyComponent(){
   function handleClick1(){
     inputRef1.current.focus();
     inputRef1.current.style.backgroundColor = "yellow";
+    inputRef2.current.style.backgroundColor = "";
+    inputRef3.current.style.backgroundColor = "";
   }
 
   function handleClick2(){
     inputRef2.current.focus();
-    inputRef2.current.style.backgroundColor = "magenta";
+    inputRef1.current.style.backgroundColor = "";
+    inputRef2.current.style.backgroundColor = "yellow";
+    inputRef3.current.style.backgroundColor = "";
   }
 
   function handleClick3(){
     inputRef3.current.focus();
-    inputRef3.current.style.backgroundColor = "aqua";
+    inputRef1.current.style.backgroundColor = "";
+    inputRef2.current.style.backgroundColor = "";
+    inputRef3.current.style.backgroundColor = "yellow";
   }
 
   return(
